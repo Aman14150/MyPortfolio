@@ -1,0 +1,69 @@
+.mainNav {
+    background-color: rgb(33, 33, 33);
+    color: white;
+    padding: 0;
+  }
+  
+  .portfolio {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .mr-auto {
+    background-color: rgb(14, 14, 21);
+    padding: 20px;
+  }
+  
+  .logoImg {
+    color: white; 
+    position: relative;
+    width: 80px;
+    height: 80px;
+    margin-left: 30px;
+    padding: 10px;
+    border-radius: 50%;
+  }
+  
+  .Portfolio{
+    padding-right: 30px;
+  }
+
+  .Portfolio:hover{
+    background-color: rgb(77, 76, 76);
+    transition: 0.5s ease-in-out;
+    transform: scale(1.02);
+  }
+  .brandText {
+    color: white;
+    font-weight: 1000;
+    font-size: 1.2rem; /* Adjust font size */
+    margin: 0; /* Remove default margin */
+  }
+  .navbar-nav .nav-link {
+    color: white !important;
+    margin-right: 40px;  /* Reduce margin for consistent spacing */
+    font-size: 20px;
+    border-radius: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  }
+  
+  .navbar-nav .nav-link:hover {
+    color: rgb(0, 0, 0) !important;
+    background-color: rgb(28, 150, 203);
+    transform: scale(1.05); 
+  }
+  
+  @media (max-width: 767px) {
+    .mainNav {
+      background-color: #212020;
+    }
+    
+    .logoImg {
+      width: 60px;
+      height: 60px;
+      margin: 10px;
+    }
+  }
+  

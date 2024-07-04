@@ -1,38 +1,81 @@
-.App {
-  text-align: center;
+@import "./PagesCSS/Nav.css";
+@import "./PagesCSS/About.css";
+@import "./PagesCSS/Projects.css";
+@import "./PagesCSS/Skills.css";
+@import "./PagesCSS/Resume.css";
+@import "./PagesCSS/Contacts.css";
+.mainBody {
+  flex: 1; 
+  color: white;
+  background: rgb(0,0,0);
+  background: -moz-linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(59,59,59,1) 50%, rgba(0,0,0,1) 100%);
+  background: -webkit-linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(59,59,59,1) 50%, rgba(0,0,0,1) 100%);
+  background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(59,59,59,1) 50%, rgba(0,0,0,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#000000",GradientType=1);
+  padding: 50px;
+  margin-top: 20px;
+  border-radius: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.profileCol {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.profileImg {
+  border-radius: 50%;
+  max-width: 65%; 
+  height: auto; 
+  display: block;
+  margin: 0 auto;
+}
+
+.introCol {
+  padding-top: 20px;
+}
+
+h3 {
+  color: #ffffff;
+}
+
+h1 {
+  color: rgb(0, 183, 255);
+}
+
+.introText {
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-.App-link {
-  color: #61dafb;
+.footer {
+  background-color: rgb(11, 11, 11);
+  padding: 20px;
+  color: gray;
+  margin-top: auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* For mobile devices */
+@media (max-width: 576px) {
+  .mainBody {
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
   }
-  to {
-    transform: rotate(360deg);
+  
+  .profileImg {
+    max-width: 100%;
+    padding: 60px;
+  }
+  
+  .footer {
+    padding: 10px;
+  }
+  
+  .introCol {
+    padding-top: 20px;
   }
 }
